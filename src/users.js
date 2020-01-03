@@ -1,0 +1,1 @@
+exports.userData = {name: 'Viktor', address: {town: 'Lviv', street: 'Ploshya rynok'}};
