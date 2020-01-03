@@ -12,7 +12,8 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
     "jasmine": "^3.5.0"
   }
 }
