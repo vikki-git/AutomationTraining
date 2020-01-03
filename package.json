@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "testScope": "node ./src/scope.js",
     "testReferenceVsPrimitiveTtypes": "node ./src/reference.vs.primitive.types.js",
-    "testFsCreateFile": "node ./src/create.file.js"
+    "testFsCreateFile": "node ./src/create.file.js",
+    "testEquakity": "node ./src/equality.js"
   },
   "author": "",
   "license": "ISC"
