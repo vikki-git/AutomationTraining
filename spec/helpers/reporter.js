@@ -7,15 +7,15 @@ class CustomProcessor extends jasmineSpecReporter.DisplayProcessor {
     displayJasmineStarted(info, log) {
         return `${JSON.stringify(info)}, ${log}`;
     }
-
-    displaySuccessfulSpec(info, log) {
-        return `${JSON.stringify(info)}, ${log}`;
-        info.failedExpectations.message = 'TEST MESSAGE'
-    }
-
-    displayFailedSpec(info, log) {
-        return `${JSON.stringify(info)}, ${log}`;
-    }
+    //
+    // displaySuccessfulSpec(info, log) {
+    //     return `${JSON.stringify(info)}, ${log}`;
+    //     info.failedExpectations.message = 'TEST MESSAGE'
+    // }
+    //
+    // displayFailedSpec(info, log) {
+    //     return `${JSON.stringify(info)}, ${log}`;
+    // }
 }
 
 jasmine.getEnv().addReporter(new SpecReporter({

@@ -8,7 +8,8 @@
     "testScope": "node ./src/scope.js",
     "testReferenceVsPrimitiveTtypes": "node ./src/reference.vs.primitive.types.js",
     "testFsCreateFile": "node ./src/create.file.js",
-    "testEquakity": "node ./src/equality.js"
+    "testEquakity": "node ./src/equality.js",
+    "runApp": "node ./src/app.js"
   },
   "author": "",
   "license": "ISC",

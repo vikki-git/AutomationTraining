@@ -1,9 +1,17 @@
+// import {multiply} from "../src/calc.v1";
+const {multiply} = require("../src/calc.v1");
+const {calc} = require("../src/calc.v1");
+
 describe('Suite 1', () => {
     it('test1', () => {
-        expect(1).withContext('something else').toBe(1, 'Incorrect');
+        expect(multiply(2, 3)).withContext('function').toBe(2 * 3, 'Incorrect');
     })
 
     it('test2', () => {
-        expect(1).withContext('something else').toBe(true, 'Incorrect');
+        expect(calc.sum(5, 6)).withContext('object').toBe(5 + 6, 'Incorrect');
+    })
+
+    it('test2', () => {
+        expect(typeof calc.getDate()).toBe('object', 'Incorrect');
     })
 })
