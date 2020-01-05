@@ -2,7 +2,7 @@
   "name": "learnjs",
   "version": "1.0.0",
   "description": "learn in edv",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "jasmine",
     "testScope": "node ./src/scope.js",
