@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jasmine": "^3.5.0",
     "jasmine-spec-reporter": "^4.2.1",
-    "jasmine": "^3.5.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
   }
 }

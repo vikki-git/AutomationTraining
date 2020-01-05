@@ -1,5 +1,6 @@
 // import {userData} from "./users";
 const http = require('http');
+const process = require('process');
 // const userData = require("./users");
 
 const app = http.createServer((req, res) => {
@@ -7,7 +8,7 @@ const app = http.createServer((req, res) => {
     // res.write(userData);
     res.write('dsfsd');
     res.end();
-    // process.exit();
+    // process.exit(1);
 });
 
 app.listen(3000);
