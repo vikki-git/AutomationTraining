@@ -1,18 +1,12 @@
 // import * as request from 'request-promise';
+const {appl} = require("../src/app");
+
 const request = require('request-promise');
 
 describe('Requests', () => {
-    // it('req obj', () => {
-    //     const req = request({
-    //         method: 'GET',
-    //         url: 'http://localhost:3000',
-    //         qs: '',
-    //         json: true,
-    //     });
-    //
-    //     expect(req.method).toBe('GET', 'Incorrect');
-    //     console.log(JSON.stringify(req));
-    // })
+    beforeAll(async () => {
+        await appl.listen(3000);
+    })
 
     it('Local app - resp', async () => {
         const resp = await request({
@@ -22,7 +16,13 @@ describe('Requests', () => {
             json: true,
         });
 
-        expect(resp).toBe('dsfsd', 'Incorrect');
+        expect(resp).toBe('Hello!', 'Incorrect response.');
         console.log(resp);
+        // console.log(statusCode);
+        // console.log(body);
+    });
+
+    afterAll(() => {
+        process.exit(1);
     })
 })
