@@ -22,6 +22,22 @@ describe('Requests', () => {
         // console.log(body);
     });
 
+    it('Local app - resolveWithFullResponse', async () => {
+        const {body, statusCode, statusMessage} = await request({
+            method: 'GET',
+            url: 'http://localhost:3000',
+            qs: '',
+            json: true,
+            resolveWithFullResponse: true,
+        });
+
+        expect(body).toBe('Hello!', 'Incorrect body.');
+        expect(statusCode).toBe(200, 'Incorrect statusCode.');
+        expect(statusMessage).toBe('test', 'Incorrect statusMessage.');
+        console.log(statusCode);
+        console.log(body);
+    });
+
     afterAll(() => {
         process.exit(1);
     })

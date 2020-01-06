@@ -11,7 +11,7 @@ describe('Suite 1', () => {
         expect(calc.sum(5, 6)).withContext('object').toBe(5 + 6, 'Incorrect');
     })
 
-    it('test2', () => {
+    it('test3 - typeof calc', () => {
         expect(typeof calc.getDate()).toBe('object', 'Incorrect');
     })
 })
