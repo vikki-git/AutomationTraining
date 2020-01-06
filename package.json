@@ -9,7 +9,7 @@
     "testReferenceVsPrimitiveTtypes": "node src/1/3.reference.vs.primitive.types.js",
     "testFsCreateFile": "node src/1/2.create.file.js",
     "testEquakity": "node src/other.constructions/equality.js",
-    "runApp": "node ./src/app.js"
+    "runApp": "node src/2/app.js"
   },
   "author": "",
   "license": "ISC",

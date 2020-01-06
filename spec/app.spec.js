@@ -1,5 +1,5 @@
 // import * as request from 'request-promise';
-const {appl} = require("../src/app");
+const {appl} = require("../src/2/app");
 
 const request = require('request-promise');
 
