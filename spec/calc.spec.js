@@ -1,6 +1,6 @@
 // import {multiply} from "../src/calc.v1";
-const {multiply} = require("../src/calc.v1");
-const {calc} = require("../src/calc.v1");
+const {multiply} = require("../src/1/homework/calc.v1");
+const {calc} = require("../src/1/homework/calc.v1");
 
 describe('Suite 1', () => {
     it('test1', () => {

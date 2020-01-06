@@ -5,10 +5,10 @@
   "main": "",
   "scripts": {
     "test": "jasmine",
-    "testScope": "node src/1/scope.js",
-    "testReferenceVsPrimitiveTtypes": "node src/1/reference.vs.primitive.types.js",
-    "testFsCreateFile": "node src/1/create.file.js",
-    "testEquakity": "node ./src/equality.js",
+    "testScope": "node src/1/5.scope.js",
+    "testReferenceVsPrimitiveTtypes": "node src/1/3.reference.vs.primitive.types.js",
+    "testFsCreateFile": "node src/1/2.create.file.js",
+    "testEquakity": "node src/other.constructions/equality.js",
     "runApp": "node ./src/app.js"
   },
   "author": "",
