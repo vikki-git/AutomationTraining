@@ -47,3 +47,31 @@ let sayHi = function() {
 let func = sayHi;
 func(); // Привет    // (3) вызываем копию (работает)!
 sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
+
+
+// Function Declaration
+sayHi("Вася"); // Привет, Вася
+function sayHi(name) {
+    console.log( `Привет, ${name}` );
+}
+
+// // Function Expression
+// sayHi("Вася"); // ошибка!
+// let sayHi = function(name) {  // (*) магии больше нет
+//     console.log( `Привет, ${name}` );
+// };
+
+'use strict'
+let age = 18;
+// в зависимости от условия объявляем функцию
+if (age < 18) {
+    function welcome() {
+        console.log("Привет!");
+    }
+} else {
+    function welcome() {
+        console.log("Здравствуйте!");
+    }
+}
+// ...не работает
+welcome(); // Error: welcome is not defined

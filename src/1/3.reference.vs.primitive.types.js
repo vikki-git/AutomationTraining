@@ -42,3 +42,9 @@ console.log(user5);
 
 console.log(hobbies);
 console.log(hobbiesDeepCopy);
+
+console.log(user1 === user2);
+console.log(user1 === user3);
+console.log(user1 === user4);
+console.log(user1.hobbies === user4.hobbies);
+console.log(user1 === user5);
