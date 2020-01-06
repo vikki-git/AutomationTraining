@@ -20,3 +20,5 @@ console.log(user.isAdmin); // false
 // console.log(user.name); // Вася
 // console.log(user.isAdmin); // false
 
+// .catch(error => fail(`Refund order failed: ${error}`));
+// .then(resp => console.log('file creates successfully'), err => console.log('error'));
