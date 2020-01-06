@@ -23,3 +23,27 @@ console.log( from ); // Аня
 // Результат функции с пустым return или без него – undefined
 function doNothing() { /* пусто */ }
 console.log( doNothing() === undefined ); // true
+
+
+'use strict'
+function sayHi() {
+    console.log("Привет");
+}
+console.log(sayHi); // [Function: sayHi]
+console.log(sayHi.toString()); // function text
+
+
+function sayHi() {   // (1) создаём
+    console.log("Привет");
+}
+let func = sayHi;    // (2) копируем
+func(); // Привет    // (3) вызываем копию (работает)!
+sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
+
+// vs function expression
+let sayHi = function() {
+    console.log( "Привет" );
+};
+let func = sayHi;
+func(); // Привет    // (3) вызываем копию (работает)!
+sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
