@@ -7,6 +7,9 @@
 // 5. Function as constructor
 // https://learn.javascript.ru/constructor-new
 
+// scope, this
+// https://learn.javascript.ru/object-methods
+
 // создать файл калькулятор, экспортировать объект калькулятора с четырьмя функциями: sum, substr, mult, div
 // покрыть unit тестами
 
