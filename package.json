@@ -5,9 +5,9 @@
   "main": "",
   "scripts": {
     "test": "jasmine",
-    "testScope": "node ./src/scope.js",
-    "testReferenceVsPrimitiveTtypes": "node ./src/reference.vs.primitive.types.js",
-    "testFsCreateFile": "node ./src/create.file.js",
+    "testScope": "node src/1/scope.js",
+    "testReferenceVsPrimitiveTtypes": "node src/1/reference.vs.primitive.types.js",
+    "testFsCreateFile": "node src/1/create.file.js",
     "testEquakity": "node ./src/equality.js",
     "runApp": "node ./src/app.js"
   },
