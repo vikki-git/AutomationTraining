@@ -1,3 +1,6 @@
+let sayHi = () => console.log("Hello!");
+sayHi();
+
 let multiply = function (x, y) {
     return x * y;
 };
