@@ -82,3 +82,19 @@ let user = {
 };
 
 user.sayHi(); // Илья
+
+
+'use strict'
+let age = 15;
+// в зависимости от условия объявляем функцию
+if (age < 18) {
+    function welcome() {
+        console.log("Привет!");
+    }
+} else {
+    function welcome() {
+        console.log("Здравствуйте!");
+    }
+}
+// ...не работает
+welcome(); // Error: welcome is not defined
