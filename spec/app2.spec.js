@@ -34,7 +34,7 @@ describe('Requests. App2', () => {
         expect(statusMessage).toBe('test users', 'Incorrect statusMessage.');
     });
 
-    it('url === /users', function (done) {
+    it('url === /users - promises', function (done) {
         request({
             method: 'GET',
             url: 'http://localhost:3001/users',
