@@ -19,5 +19,22 @@ setTimeout(() => {
         });
 }, 2000);
 
-console.log('Hello!');
-console.log('Hi!');
+console.log('1');
+console.log('2');
+
+fetchData().then(result => {
+    console.log('fetched1 ' + result)
+    fetchData().then(result => {
+        console.log('fetched2 ' + result)
+    })
+}).catch(err => console.error(err))
+
+fetchData().then(result => {
+    console.log('fetched3 ' + result)
+    return fetchData();
+}).then(result => {
+    console.log('fetched4 ' + result)
+}).catch(err => console.error(err))
+
+fetchData().then(result => console.log('fetched5 ' + result)).catch(err => console.log(err))
+

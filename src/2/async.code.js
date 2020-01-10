@@ -5,12 +5,12 @@ const fetchData = (callback) => {
 };
 
 setTimeout(() => {
-    console.log('Timer is done!');
+    console.log('Timer is done');
     fetchData(text => {
         console.log(text);
     })
 
-}, 2000);
+}, 1000);
 
-console.log('Hello!');
-console.log('Hi!');
+console.log('1');
+console.log('2');

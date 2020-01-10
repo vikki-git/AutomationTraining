@@ -34,6 +34,22 @@ describe('Requests. App2', () => {
         expect(statusMessage).toBe('test users', 'Incorrect statusMessage.');
     });
 
+    it('url === /users', function (done) {
+        request({
+            method: 'GET',
+            url: 'http://localhost:3001/users',
+            qs: '',
+            json: true,
+            resolveWithFullResponse: true,
+        }).then(res => {
+            console.log(res.body)
+            expect(res.body).toBe('User list!', 'Incorrect body.');
+            expect(res.statusCode).toBe(200, 'Incorrect statusCode.');
+            expect(res.statusMessage).toBe('test users', 'Incorrect statusMessage.');
+            done();
+        });
+    });
+
     afterAll(() => {
         process.exit(1);
     })

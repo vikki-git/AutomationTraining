@@ -1,6 +1,6 @@
 const {bubbleSort} = require("../src/1/homework/bubble");
 
-describe('bubbleSort 1. ', () => {
+fdescribe('bubbleSort 1. ', () => {
     const array = [5, 2, 4, 9, 8, 1, 7, -1, -6, 10, 15, 8];
 
     it('test 1', () => {
@@ -16,8 +16,8 @@ describe('bubbleSort 1. ', () => {
 
     it('test 1', () => {
         const sortedArray = bubbleSort([...array]);
-        const expectedSortedArray = array.sort();
-        // const expectedSortedArray = array.sort((a, b) => a - b);
+        // const expectedSortedArray = array.sort();
+        const expectedSortedArray = array.sort((a, b) => a - b);
 
         expect(sortedArray).toEqual(expectedSortedArray, 'Incorrect');
 
