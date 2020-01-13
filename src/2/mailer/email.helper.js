@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const sendgridTransport = require('nodemailer-sendgrid-transport');
+const sendblueTransport = require('nodemailer-sendinblue-transport');
 //
 // const transporter = nodemailer.createTransport(
 //     sendgridTransport({
@@ -42,11 +42,9 @@ const sendgridTransport = require('nodemailer-sendgrid-transport');
 const sendEmail = () => {
     return new Promise((resolve, reject) => {
         nodemailer.createTransport(
-            sendgridTransport({
-                auth: {
-                    api_key:
-                        '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'
-                }
+            sendblueTransport({
+                apiKey:
+                    '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'
             })
         ).sendMail({
             to: 'mihailova.vika@gmail.com',
