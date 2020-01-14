@@ -19,4 +19,10 @@ nodemailer.createTransport(
     from: 'viktoriia.mykhailova@drillinginfo.com',
     subject: 'mail sent with callback!',
     text: 'email test with callback',
-}, err => console.log(err));
+}, (err, resp) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+    console.log(resp);
+});
