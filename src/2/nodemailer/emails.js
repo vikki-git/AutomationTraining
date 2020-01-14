@@ -1,0 +1,4 @@
+exports.transportMail = {
+    email: '',
+    password: ''
+}
