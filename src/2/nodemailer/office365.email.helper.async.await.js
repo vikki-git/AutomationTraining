@@ -8,8 +8,8 @@ const nodemailer = require('nodemailer');
                     host: 'smtp.office365.com',
                     port: 587,
                     auth: {
-                        user: 'viktoriia.mykhailova@drillinginfo.com',
-                        pass: 'Apelsin#1025',
+                        user: '',
+                        pass: '',
                     },
                     secureConnection: false,
                     tls: {
@@ -19,7 +19,7 @@ const nodemailer = require('nodemailer');
                 }
             ).sendMail({
                 to: 'mihailova.vika@gmail.com',
-                from: 'viktoriia.mykhailova@drillinginfo.com',
+                from: '',
                 subject: 'mail sent with async-await!',
                 text: 'email test with async-await',
             })

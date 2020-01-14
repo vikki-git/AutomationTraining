@@ -5,8 +5,8 @@ nodemailer.createTransport(
         host: 'smtp.office365.com',
         port: 587,
         auth: {
-            user: 'viktoriia.mykhailova@drillinginfo.com',
-            pass: 'Apelsin#1025',
+            user: '',
+            pass: '',
         },
         secureConnection: false,
         tls: {
@@ -16,7 +16,7 @@ nodemailer.createTransport(
     }
 ).sendMail({
     to: 'mihailova.vika@gmail.com',
-    from: 'viktoriia.mykhailova@drillinginfo.com',
+    from: '',
     subject: 'mail sent with callback!',
     text: 'email test with callback',
 }, (err, resp) => {
