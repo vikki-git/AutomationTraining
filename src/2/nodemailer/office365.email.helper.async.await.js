@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const {transportMail} = require('./emails');
 
 (async () => {
         let resp;
@@ -8,8 +9,8 @@ const nodemailer = require('nodemailer');
                     host: 'smtp.office365.com',
                     port: 587,
                     auth: {
-                        user: '',
-                        pass: '',
+                        user: transportMail.email,
+                        pass: transportMail.password,
                     },
                     secureConnection: false,
                     tls: {
@@ -19,7 +20,7 @@ const nodemailer = require('nodemailer');
                 }
             ).sendMail({
                 to: 'mihailova.vika@gmail.com',
-                from: '',
+                from: transportMail.email,
                 subject: 'mail sent with async-await!',
                 text: 'email test with async-await',
             })

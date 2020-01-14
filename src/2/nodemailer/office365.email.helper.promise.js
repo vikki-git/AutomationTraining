@@ -1,12 +1,13 @@
 const nodemailer = require('nodemailer');
+const {transportMail} = require('./emails');
 
 nodemailer.createTransport(
     {
         host: 'smtp.office365.com',
         port: 587,
         auth: {
-            user: '',
-            pass: '',
+            user: transportMail.email,
+            pass: transportMail.password,
         },
         secureConnection: false,
         tls: {
@@ -16,7 +17,7 @@ nodemailer.createTransport(
     }
 ).sendMail({
     to: 'mihailova.vika@gmail.com',
-    from: '',
+    from: transportMail.email,
     subject: 'mail sent with promise!',
     text: 'email test with promise',
 }).then(resp => console.log(resp), err => console.log(err));
