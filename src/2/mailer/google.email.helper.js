@@ -18,25 +18,24 @@ const sendgridTransport = require('nodemailer-sendgrid-transport');
 //         pass: 'shuchka123',
 //     },
 // }
+// vtlgjgtkxfjdljzn
 
-const sendEmailData = {
-    to: 'mihailova.vika@gmail.com',
-    from: 'mihailova.vika@gmail.com',
-    subject: 'mail sent!',
-    text: 'email test',
-};
-
-const sendEmail = ({sendEmailData}) => {
+const sendEmail = () => {
     return new Promise((resolve, reject) => {
         nodemailer.createTransport(
             {
-                host: 'imap.gmail.com',
+                host: 'smtp.gmail.com',
                 auth: {
                     user: 'mihailova.vika@gmail.com',
-                    pass: 'shuchka123',
+                    pass: 'bxpxxiycfmyyydfi',
                 },
             }
-        ).sendMail(sendEmailData, async (error, info) => {
+        ).sendMail({
+            to: 'mihailova.vika@gmail.com',
+            from: 'mihailova.vika@gmail.com',
+            subject: 'mail sent!',
+            text: 'email test',
+        }, async (error, info) => {
             if (error) {
                 reject(error);
             } else {
@@ -46,5 +45,5 @@ const sendEmail = ({sendEmailData}) => {
     });
 };
 
-sendEmail(sendEmailData)
+sendEmail()
     .then(resp => console.log(resp), err => console.log(err));
