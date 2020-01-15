@@ -1,4 +1,4 @@
 exports.transportMail = {
-    user: 'mihailova.vika@gmail.com',
-    pass: 'bxpxxiycfmyyydfi',
+    email: 'mihailova.vika@gmail.com',
+    password: 'bxpxxiycfmyyydfi',
 }
