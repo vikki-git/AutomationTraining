@@ -41,3 +41,6 @@ var c = new Calc(0);
 var m = new MathCalc(0);
 
 c.add(5);
+console.log(c.getValue());
+c.subs(5);
+console.log(c.getValue());
